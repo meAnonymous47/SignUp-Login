@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* Base Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+	background-size: cover;
+	padding: 20px;
+}
+
+/* Container */
+.Register-container {
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 40px 30px;
+	border-radius: 16px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+	animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+.Register-container h2 {
+	margin-bottom: 25px;
+	color: #333;
+	font-size: 2rem;
+}
+
+/* Form Styling */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+form label {
+	margin: 10px 0 5px;
+	font-weight: 500;
+	color: #555;
+}
+
+form input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	outline: none;
+	transition: border-color 0.3s ease;
+}
+
+form input:focus {
+	border-color: #667eea;
+}
+
+/* Button */
+form button {
+	margin-top: 20px;
+	width: 100%;
+	padding: 12px;
+	border: none;
+	background: linear-gradient(135deg, #667eea, #764ba2);
+	color: white;
+	font-weight: bold;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+	background: linear-gradient(135deg, #5a67d8, #6b46c1);
+	transform: translateY(-2px);
+}
+
+/* Link */
+.Register-container p {
+	margin-top: 20px;
+}
+
+.Register-container a {
+	color: #667eea;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.Register-container a:hover {
+	color: #5647cc;
+}
+
+/* Animation */
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+}
